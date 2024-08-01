@@ -6,7 +6,7 @@ import Section from "../ui/Section";
 const Hero = () => {
   return (
     <Section className="h-screen">
-      <img src={Avatar} className="w-56 rounded-full" alt="hero avatar" />
+      <img src={Avatar} className="h-56 w-56 rounded-full" alt="hero avatar" />
       <h1 className="text-2xl font-bold text-primary md:text-3xl lg:text-5xl">
         Hi, I'm Jeffy
         <motion.span
@@ -36,21 +36,21 @@ const Hero = () => {
       </h2>
       <div className="flex space-x-5">
         {" "}
-        <button className="btn btn-primary">
+        <button className="btn btn-primary" aria-label="get-in-touch">
           {" "}
           <MessageCircleMore />
           Get in touch
         </button>
-        <button className="btn btn-ghost">
+        <button className="btn btn-ghost" aria-label="download-cv">
           {" "}
           <Download />
-          Download DV
+          Download CV
         </button>
-        <button className="btn btn-ghost">
+        <button className="btn btn-ghost" aria-label="github">
           {" "}
           <Github />
         </button>
-        <button className="btn btn-ghost">
+        <button className="btn btn-ghost" aria-label="linkedin">
           {" "}
           <Linkedin />
         </button>
