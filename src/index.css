@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply bg-base-300;
+}
+
+.btn {
+  @apply rounded-full;
+}
+
+.btn-ghost {
+  @apply bg-base-100;
+  @apply text-primary;
+}
