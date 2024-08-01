@@ -1,17 +1,18 @@
 import Avatar from "@/assets/avatar.webp";
 import { motion } from "framer-motion";
 import { Download, Github, Linkedin, MessageCircleMore } from "lucide-react";
+import Section from "../ui/Section";
 
 const Hero = () => {
   return (
-    <section className="mx-5 flex h-screen flex-col items-center justify-center space-y-5 xl:mx-auto">
+    <Section className="h-screen">
       <img src={Avatar} className="w-56 rounded-full" alt="hero avatar" />
-      <h1 className="text-primary text-2xl font-bold md:text-3xl lg:text-5xl">
+      <h1 className="text-2xl font-bold text-primary md:text-3xl lg:text-5xl">
         Hi, I'm Jeffy
         <motion.span
           style={{
             marginBottom: "-50px",
-            marginRight: "-80px",
+            marginRight: "-20px",
             paddingBottom: "50px",
             paddingRight: "45px",
             display: "inline-block",
@@ -54,7 +55,7 @@ const Hero = () => {
           <Linkedin />
         </button>
       </div>
-    </section>
+    </Section>
   );
 };
 
