@@ -34,7 +34,7 @@ const Hero = () => {
         </motion.span>
       </h1>
 
-      <h2 className="w-full max-w-screen-md justify-center md:text-lg lg:text-xl">
+      <h2 className="mx-auto max-w-screen-sm justify-center md:text-lg lg:text-xl">
         A web developer who loves turning ideas into reality through code. Dive
         into my portfolio to see how I blend creativity and technology to create
         awesome digital experiences. Let's build something amazing together!
