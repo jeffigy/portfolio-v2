@@ -1,20 +1,25 @@
 import Avatar from "@/assets/avatar.webp";
 import { motion } from "framer-motion";
-import { Download, Github, Linkedin, MessageCircleMore } from "lucide-react";
+import { Download, MessageCircleMore } from "lucide-react";
 import Section from "../ui/Section";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <Section className="h-screen">
-      <img src={Avatar} className="h-56 w-56 rounded-full" alt="hero avatar" />
+    <Section id="home" className="h-screen">
+      <img
+        src={Avatar}
+        className="h-44 w-44 rounded-full md:h-48 md:w-48 lg:h-52 lg:w-52"
+        alt="hero avatar"
+      />
       <h1 className="text-2xl font-bold text-primary md:text-3xl lg:text-5xl">
         Hi, I'm Jeffy
         <motion.span
           style={{
             marginBottom: "-50px",
             marginRight: "-20px",
-            paddingBottom: "50px",
-            paddingRight: "45px",
+            paddingBottom: "30px",
+            paddingRight: "30px",
             display: "inline-block",
           }}
           animate={{ rotate: [0, 20, 0] }}
@@ -29,30 +34,27 @@ const Hero = () => {
         </motion.span>
       </h1>
 
-      <h2 className="w-full max-w-screen-md md:text-lg lg:text-xl">
+      <h2 className="w-full max-w-screen-md justify-center md:text-lg lg:text-xl">
         A web developer who loves turning ideas into reality through code. Dive
         into my portfolio to see how I blend creativity and technology to create
         awesome digital experiences. Let's build something amazing together!
       </h2>
       <div className="flex space-x-5">
         {" "}
-        <button className="btn btn-primary" aria-label="get-in-touch">
+        <Link
+          to="contact"
+          smooth="true"
+          className="btn btn-primary"
+          aria-label="get-in-touch"
+        >
           {" "}
           <MessageCircleMore />
           Get in touch
-        </button>
+        </Link>
         <button className="btn btn-ghost" aria-label="download-cv">
           {" "}
           <Download />
           Download CV
-        </button>
-        <button className="btn btn-ghost" aria-label="github">
-          {" "}
-          <Github />
-        </button>
-        <button className="btn btn-ghost" aria-label="linkedin">
-          {" "}
-          <Linkedin />
         </button>
       </div>
     </Section>
