@@ -1,4 +1,3 @@
-import { Github, Linkedin } from "lucide-react";
 import Meteors from "../magicui/meteors";
 import Section from "../ui/Section";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
