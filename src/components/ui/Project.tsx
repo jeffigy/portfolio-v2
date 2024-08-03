@@ -36,7 +36,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           <ul className="flex flex-wrap gap-2">
             {project.tags.map((tag, index) => (
               <li
-                className="rounded-full bg-base-300 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white dark:text-white/70"
+                className="rounded-full bg-base-300 px-3 py-1 text-[0.7rem] uppercase tracking-wider"
                 key={index}
               >
                 {tag}

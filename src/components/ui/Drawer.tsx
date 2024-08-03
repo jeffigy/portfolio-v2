@@ -65,6 +65,7 @@ const Drawer = () => {
         }}
       >
         <motion.button
+          aria-label="menu"
           initial={false}
           animate={isOpen ? "open" : "closed"}
           onClick={toggleDrawer}
