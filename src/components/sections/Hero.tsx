@@ -42,6 +42,7 @@ const Hero = () => {
       <div className="flex space-x-5">
         {" "}
         <Link
+          href="contact"
           to="contact"
           smooth="true"
           className="btn btn-primary"

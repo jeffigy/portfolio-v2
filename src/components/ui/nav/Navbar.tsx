@@ -12,6 +12,7 @@ const Navbar = () => {
           {Links &&
             Links.map((link, index) => (
               <Link
+                href={link.hash}
                 key={index}
                 spy={true}
                 smooth={true}

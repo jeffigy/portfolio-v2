@@ -112,6 +112,7 @@ const Drawer = () => {
                   className="text-5xl font-bold"
                 >
                   <Link
+                    href={link.hash}
                     className="cursor-pointer"
                     smooth={true}
                     to={link.hash}
