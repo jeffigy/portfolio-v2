@@ -1,5 +1,6 @@
 import DentriCare from "@/assets/projects/dentricare.png";
 import ShareCipe from "@/assets/projects/sharecipe.png";
+import { Github, Linkedin } from "lucide-react";
 export const Links = [
   {
     name: "Home",
@@ -54,6 +55,7 @@ export const projectsData = [
       "Express",
     ],
     imageUrl: DentriCare,
+    link: "https://dentricare.onrender.com/",
   },
   {
     title: "ShareCipe",
@@ -61,6 +63,7 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Firebase", "Zustand"],
     imageUrl: ShareCipe,
+    link: "https://sharecipe.vercel.app/auth",
   },
   {
     title: "Perfil",
@@ -76,5 +79,19 @@ export const projectsData = [
       "Cloudinary",
     ],
     imageUrl: "",
+    link: "",
   },
-] as const;
+];
+
+export const socialLinks = [
+  {
+    link: "https://www.linkedin.com/in/jeffy-evangelista/",
+    icon: Linkedin,
+    label: "LinkedIn",
+  },
+  {
+    link: "https://github.com/jeffigy",
+    icon: Github,
+    label: "Github",
+  },
+];

@@ -4,8 +4,9 @@ type ProjectProps = {
   project: {
     title: string;
     description: string;
-    tags: string[] | readonly string[];
+    tags: string[];
     imageUrl: string;
+    link: string;
   };
 };
 
@@ -48,7 +49,9 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
             ))}
           </ul>
 
-          <button className="btn btn-primary">Live Site</button>
+          <a target="_blank" href={project.link} className="btn btn-primary">
+            Live Site
+          </a>
         </div>
 
         <img

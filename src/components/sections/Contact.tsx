@@ -3,6 +3,7 @@ import Meteors from "../magicui/meteors";
 import Section from "../ui/Section";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import { socialLinks } from "@/lib/data";
 
 const Contact = () => {
   return (
@@ -25,14 +26,19 @@ const Contact = () => {
           <Meteors number={30} />
           <div className="card-body">
             <div className="flex justify-center space-x-5">
-              <button className="btn btn-ghost" aria-label="github">
-                {" "}
-                <Github className="h-10 w-10" />
-              </button>
-              <button className="btn btn-ghost" aria-label="linkedin">
-                {" "}
-                <Linkedin className="h-10 w-10" />
-              </button>
+              {socialLinks &&
+                socialLinks.map((socialLink, index) => (
+                  <a
+                    className="btn btn-ghost"
+                    key={index}
+                    href={socialLink.link}
+                    target="_blank"
+                    aria-label={socialLink.label}
+                  >
+                    {" "}
+                    <socialLink.icon className="h-10 w-10" />
+                  </a>
+                ))}
             </div>
             <div className="flex w-full flex-col border-opacity-50">
               <div className="divider">OR</div>
