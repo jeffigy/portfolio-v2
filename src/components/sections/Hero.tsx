@@ -7,12 +7,25 @@ import { Link } from "react-scroll";
 const Hero = () => {
   return (
     <Section id="home" className="h-screen space-y-5">
-      <img
-        src={Avatar}
-        className="h-44 w-44 rounded-full md:h-48 md:w-48 lg:h-52 lg:w-52"
-        alt="hero avatar"
-      />
-      <h1 className="text-2xl font-bold text-primary md:text-3xl lg:text-5xl">
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          type: "tween",
+          duration: "0.2",
+        }}
+      >
+        <img
+          src={Avatar}
+          className="h-44 w-44 rounded-full md:h-48 md:w-48 lg:h-52 lg:w-52"
+          alt="hero avatar"
+        />
+      </motion.div>
+      <motion.h1
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-2xl font-bold text-primary md:text-3xl lg:text-5xl"
+      >
         Hi, I'm Jeffy
         <motion.span
           style={{
@@ -32,14 +45,22 @@ const Hero = () => {
         >
           👋
         </motion.span>
-      </h1>
+      </motion.h1>
 
-      <h2 className="mx-auto max-w-screen-sm justify-center md:text-lg lg:text-xl">
+      <motion.h2
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="mx-auto max-w-screen-sm justify-center md:text-lg lg:text-xl"
+      >
         A web developer who loves turning ideas into reality through code. Dive
         into my portfolio to see how I blend creativity and technology to create
         awesome digital experiences. Let's build something amazing together!
-      </h2>
-      <div className="flex space-x-5">
+      </motion.h2>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="flex space-x-5"
+      >
         {" "}
         <Link
           href="contact"
@@ -57,7 +78,7 @@ const Hero = () => {
           <Download />
           Download CV
         </button>
-      </div>
+      </motion.div>
     </Section>
   );
 };

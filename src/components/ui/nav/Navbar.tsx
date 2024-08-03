@@ -2,10 +2,15 @@ import Logo from "@/assets/initials.png";
 import Drawer from "../Drawer";
 import { Link } from "react-scroll";
 import { Links } from "@/lib/data";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 z-20 flex w-full bg-base-300">
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      className="fixed top-0 z-20 flex w-full bg-base-300"
+    >
       <div className="mx-5 flex h-14 w-full max-w-screen-xl items-center justify-between xl:mx-auto">
         <img src={Logo} className="h-10 w-auto text-primary" alt="Logo" />
         <div className="hidden space-x-2 md:flex">
@@ -26,7 +31,7 @@ const Navbar = () => {
         </div>
         <Drawer />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
