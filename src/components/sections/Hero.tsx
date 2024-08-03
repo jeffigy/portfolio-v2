@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <Section id="home" className="h-screen">
+    <Section id="home" className="h-screen space-y-5">
       <img
         src={Avatar}
         className="h-44 w-44 rounded-full md:h-48 md:w-48 lg:h-52 lg:w-52"

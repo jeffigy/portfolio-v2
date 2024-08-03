@@ -16,7 +16,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className={`justify-centerxl:mx-auto mx-5 flex flex-col items-center ${className}`}
+      className={`mx-5 flex flex-col items-center justify-center xl:mx-auto ${className}`}
     >
       {title && (
         <h3 className="mb-20 text-lg font-bold text-primary md:text-xl lg:text-3xl">
