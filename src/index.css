@@ -10,6 +10,10 @@
   @apply rounded-full;
 }
 
+.btn-primary {
+  @apply text-base-100;
+}
+
 .btn-ghost {
   @apply bg-base-200;
   @apply text-primary;

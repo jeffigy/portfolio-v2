@@ -70,7 +70,7 @@ const Hero = () => {
           aria-label="get-in-touch"
         >
           {" "}
-          <MessageCircleMore />
+          <MessageCircleMore className="text-base-100" />
           Get in touch
         </Link>
         <button className="btn btn-ghost" aria-label="download-cv">
