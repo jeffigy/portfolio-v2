@@ -50,7 +50,7 @@ const Hero = () => {
       <motion.h2
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="mx-auto max-w-screen-sm justify-center md:text-lg lg:text-xl"
+        className="max-w-screen-md justify-center text-justify md:text-lg lg:text-xl"
       >
         A web developer who loves turning ideas into reality through code. Dive
         into my portfolio to see how I blend creativity and technology to create

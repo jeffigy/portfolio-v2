@@ -21,7 +21,7 @@ const Contact = () => {
       }}
     >
       <Section id="contact" title="Contact" className="h-screen">
-        <div className="bg-background card w-full max-w-xl overflow-hidden rounded-md bg-base-100">
+        <div className="bg-background card w-full max-w-xl overflow-hidden rounded-md bg-base-200">
           <Meteors number={30} />
           <div className="card-body">
             <div className="flex justify-center space-x-5">

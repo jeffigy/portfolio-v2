@@ -43,27 +43,29 @@ export const SkillsData = [
 
 export const projectsData = [
   {
-    title: "ShareCipe",
+    title: "DentriCare",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "DentriCare is a simple dental management web application designed to simplify the task of dental practices.",
     tags: [
       "React",
       "TypeScript",
+      "Express",
       "Redux Toolkit",
       "MongoDB",
       "ChakraUI",
-      "Express",
     ],
     imageUrl: DentriCare,
-    link: "https://dentricare.onrender.com/",
+    demoLink: "https://dentricare.onrender.com/",
+    githubLink: "https://github.com/jeffigy/DentriCare",
   },
   {
     title: "ShareCipe",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "ShareCipe is a recipe sharing platform that connects food enthusiasts, enabling them to discover and share their love and passion for food.",
     tags: ["React", "TypeScript", "Firebase", "Zustand"],
     imageUrl: ShareCipe,
-    link: "https://sharecipe.vercel.app/auth",
+    demoLink: "https://sharecipe.vercel.app/auth",
+    githubLink: "https://github.com/jeffigy/ShareCipe",
   },
   {
     title: "Perfil",
@@ -79,7 +81,8 @@ export const projectsData = [
       "Cloudinary",
     ],
     imageUrl: "",
-    link: "",
+    demoLink: "",
+    githubLink: "",
   },
 ];
 

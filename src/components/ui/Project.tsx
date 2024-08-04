@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Github } from "lucide-react";
 import React, { useRef } from "react";
 type ProjectProps = {
   project: {
@@ -6,7 +7,8 @@ type ProjectProps = {
     description: string;
     tags: string[];
     imageUrl: string;
-    link: string;
+    demoLink: string;
+    githubLink: string;
   };
 };
 
@@ -28,13 +30,13 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
       }}
       className="group mb-3 last:mb-0 sm:mb-8"
     >
-      <section className="relative max-w-[42rem] overflow-hidden rounded-lg bg-base-100 transition sm:pr-8 sm:group-even:pl-8">
+      <section className="relative max-w-[42rem] overflow-hidden rounded-lg bg-base-200 transition sm:pr-8 sm:group-even:pl-8">
         <div className="flex h-full flex-col space-y-5 px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold text-slate-100">
             {project.title}
           </h3>
 
-          <p className="leading-relaxed text-slate-200">
+          <p className="text-justify leading-relaxed text-slate-200">
             {project.description}
           </p>
 
@@ -49,9 +51,23 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
             ))}
           </ul>
 
-          <a target="_blank" href={project.link} className="btn btn-primary">
-            Live Site
-          </a>
+          <div className="flex gap-5">
+            {" "}
+            <a
+              target="_blank"
+              href={project.githubLink}
+              className="btn btn-ghost grow"
+            >
+              <Github />
+            </a>
+            <a
+              target="_blank"
+              href={project.demoLink}
+              className="btn btn-primary grow"
+            >
+              Demo
+            </a>
+          </div>
         </div>
 
         <img
