@@ -54,6 +54,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           <div className="flex gap-5">
             {" "}
             <a
+              aria-label="github-link"
               target="_blank"
               href={project.githubLink}
               className="btn btn-ghost grow"
@@ -61,6 +62,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
               <Github />
             </a>
             <a
+              aria-label="demo-link"
               target="_blank"
               href={project.demoLink}
               className="btn btn-primary grow"
