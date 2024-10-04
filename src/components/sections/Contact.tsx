@@ -35,7 +35,7 @@ const Contact = () => {
                     aria-label={socialLink.label}
                   >
                     {" "}
-                    <socialLink.icon className="h-10 w-10" />
+                    <socialLink.icon className="h-8 w-8" />
                   </a>
                 ))}
             </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                 name="name"
                 placeholder="Name"
                 type="text"
-                className="input input-lg input-bordered z-10"
+                className="input input-bordered z-10"
                 required
               />
               <input
@@ -59,13 +59,13 @@ const Contact = () => {
                 name="email"
                 placeholder="Email"
                 type="email"
-                className="input input-lg input-bordered z-10"
+                className="input input-bordered z-10"
               />
               <textarea
                 required
                 name="message"
                 placeholder="Message"
-                className="textarea textarea-bordered textarea-lg z-10 h-40"
+                className="textarea textarea-bordered z-10 h-40"
               />
               <button className="btn btn-primary w-full">
                 {" "}
