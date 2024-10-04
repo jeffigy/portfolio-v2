@@ -1,5 +1,6 @@
 import DentriCare from "@/assets/projects/dentricare.png";
 import ShareCipe from "@/assets/projects/sharecipe.png";
+import { ProjectType } from "@/types/Project";
 import { Github, Linkedin } from "lucide-react";
 export const Links = [
   {
@@ -41,7 +42,7 @@ export const SkillsData = [
   "TailwindCSS",
 ];
 
-export const projectsData = [
+export const projectsData: ProjectType[] = [
   {
     title: "DentriCare",
     description:
@@ -57,6 +58,7 @@ export const projectsData = [
     imageUrl: DentriCare,
     demoLink: "https://dentricare.onrender.com/",
     githubLink: "https://github.com/jeffigy/DentriCare",
+    status: "done",
   },
   {
     title: "ShareCipe",
@@ -66,6 +68,7 @@ export const projectsData = [
     imageUrl: ShareCipe,
     demoLink: "https://sharecipe.vercel.app/auth",
     githubLink: "https://github.com/jeffigy/ShareCipe",
+    status: "done",
   },
   {
     title: "Perfil",
@@ -83,6 +86,7 @@ export const projectsData = [
     imageUrl: "",
     demoLink: "",
     githubLink: "",
+    status: "pending",
   },
 ];
 
