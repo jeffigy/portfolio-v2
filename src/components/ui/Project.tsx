@@ -28,7 +28,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
         {project.status === "pending" ? (
           <div className="flex h-[400px] flex-col items-center justify-center space-y-5 px-5 pb-7 pt-4 sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]">
             {" "}
-            <p>Under contructions...</p>
+            <p>Under constructions...</p>
           </div>
         ) : (
           <>
