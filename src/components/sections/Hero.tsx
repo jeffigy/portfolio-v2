@@ -73,11 +73,16 @@ const Hero = () => {
           <MessageCircleMore className="text-base-100" />
           Get in touch
         </Link>
-        <button className="btn btn-ghost" aria-label="download-cv">
+        <a
+          target="_blank"
+          href="https://flowcv.com/resume/s0jbru19p6"
+          className="btn btn-ghost"
+          aria-label="download-cv"
+        >
           {" "}
           <Download />
           Download CV
-        </button>
+        </a>
       </motion.div>
     </Section>
   );
