@@ -1,5 +1,6 @@
 import DentriCare from "@/assets/projects/dentricare.png";
 import ShareCipe from "@/assets/projects/sharecipe.png";
+import Mobicare from "@/assets/projects/mobicare.png";
 import { ProjectType } from "@/types/Project";
 import { Github, Linkedin } from "lucide-react";
 export const Links = [
@@ -71,22 +72,23 @@ export const projectsData: ProjectType[] = [
     status: "done",
   },
   {
-    title: "Perfil",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    title: "MobiCare",
+    description: "A simple web application for managing repair tasks",
     tags: [
       "React",
       "TypeScript",
       "Tailwind",
+      "Zustand",
+      "React-Query",
       "Express",
       "MongoDB",
       "Nodemailer",
       "Cloudinary",
     ],
-    imageUrl: "",
-    demoLink: "",
-    githubLink: "",
-    status: "pending",
+    imageUrl: Mobicare,
+    demoLink: "https://mobicare.onrender.com",
+    githubLink: "https://github.com/jeffigy/MobiCare",
+    status: "done",
   },
 ];
 
